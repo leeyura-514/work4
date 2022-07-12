@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Gorilla</title>
+    <!-- 베이스로 깔고싶은 link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./asset/css/layout.css">
+    <!-- 가장 강력하게 적용할 link : index  -->
+    <link rel="stylesheet" href="./asset/css/index.css">
+</head>
+
+<body>
+
+    <header class="header-area">
+        <div class="inner">
+            <!-- 상단 메뉴 -->
+            <!-- logo는 gnb에 굳이 넣을 필요없음  -->
+            <div class="logo-box">
+                <h1 class="logo"><a href=""><span class="blind">카드고릴라</span></a></h1>
+            </div>
+            <nav class="gnb-area">
+                <ul class="menu-area">
+                    <li class="menu-item">
+                        <a href="">고릴라차트</a>
+                        <ul class="sub-list">
+                            <li class="sub-item first"><a href="">고릴라TOP100</a></li>
+                            <li class="sub-item"><a href="">카드타입별순위</a></li>
+                            <li class="sub-item"><a href="">인기혜택별순위</a></li>
+                            <li class="sub-item"><a href="">카드사별순위</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">검색</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">콘텐츠</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">이벤트</a>
+                        <ul class="sub-list">
+                            <li class="sub-item first"><a href="">캐시백 이벤트</a></li>
+                            <li class="sub-item"><a href="">프리미엄 이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">브랜드</a>
+                        <ul class="sub-list">
+                            <li class="sub-item first"><a href="">이달의 브랜드</a></li>
+                            <li class="sub-item"><a href="">패밀리 서비스</a></li>
+                        </ul>
+                    </li>
+                  
+                </ul>
+            </nav>
+            <div class="info-area">
+                <div class="corp-box">
+                    <a href="" class="link">카드고릴라</a>
+                    <a href="" class="link">인재영입</a>
+                </div>
+                <!-- @@@ 중간 막대는 before가 아닌 i.bar태그 추가
+                    (이유 : before는 중간 막대영역까지 버튼영역이 되버림)-->
+                <div class="lang-box">
+                    <button class="lang kr">한</button><i class="bar"></i>
+                    <button class="lang en">A</button>
+                </div>
+            </div>
+            <button class="btn-open"><span class="blind">열기</span></button>
+        </div>
+
+        <!-- 반응형 우측 메뉴 태그 위치? > 헤더 안에만 넣어놔도 됨 -->
+        <span class="dimmed"></span>
+        <nav class="gnb-right-area">
+            <div class="inner01">
+                <div class="gnb-top-area">
+                    <h1 class="logo"><a href=""><span class="blind">카드고릴라</span></a></h1>
+                    <button class="btn-close"><span class="blind">닫기</span></button>
+                </div>
+                <ul class="menu-area">
+                    <li class="menu-option">
+                        <a href="" class="child">고릴라차트</a>
+                        <ul class="sub-menu">
+                            <li class="sub-item first"><a href="">고릴라TOP100</a></li>
+                            <li class="sub-item"><a href="">카드타입별순위</a></li>
+                            <li class="sub-item"><a href="">인기혜택별순위</a></li>
+                            <li class="sub-item"><a href="">카드사별순위</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-option">
+                        <a href="">검색</a>
+                    </li>
+                    <li class="menu-option">
+                        <a href="">콘텐츠</a>
+                    </li>
+                    <li class="menu-option">
+                        <a href="" class="child">이벤트</a>
+                        <ul class="sub-menu">
+                            <li class="sub-item first"><a href="">캐시백 이벤트</a></li>
+                            <li class="sub-item"><a href="">프리미엄 이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-option">
+                        <a href="" class="child">브랜드</a>
+                        <ul class="sub-menu">
+                            <li class="sub-item first"><a href="">이달의 브랜드</a></li>
+                            <li class="sub-item"><a href="">패밀리 서비스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="service-area">
+                    <ul class="link-box">
+                        <li>
+                            <a href="" class="link bold">카드고릴라</a>
+                            <a href="" class="link bold">인재영입</a>
+                        </li>
+                        <li>
+                            <a href="" class="link">프레스티지고릴라</a>
+                            <a href="" class="link">고스티</a>
+                        </li>
+                    </ul>
+                    <div class="aside-box">
+                        <div class="notice-box">
+                            <a href="" class="notice">공지사항</a>
+                            <a href="" class="notice">오시는 길</a>
+                        </div>
+                        <div class="lang-box">
+                            <button class="lang kr">한</button><i class="bar"></i>
+                            <button class="lang en">A</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- 메인 비주얼  -->
+        <section class="sc-visual">
+            <h2 class="blind">메인슬라이드</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="img-box"><img src="./asset/images/bg/mainslide01.jpg" alt="스타벅스혜택 관련 이미지"></div>
+                            <div class="cont-box">
+                                <h3 class="title">알짜카드 추천</h3>
+                                <p class="desc"><span>스타벅스 할인하는 </span><span>카드가 <br>뭐가 있었지?</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="img-box"><img src="./asset/images/bg/mainslide02.jpg" alt="신용카드 기본 개념·용어 안내 관련 이미지"></div>
+                            <div class="cont-box">
+                                <h3 class="title">신용카드 기본 개념·용어</h3>
+                                <p class="desc"><span>청소년 미성년자 </span><span>체크카드 발급 </span><br><span>Q&A 총정리</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- 인기카드안내  -->
+        <section class="sc-card">
+            <h2 class="sc-title" data-fade>이번주 인기카드</h2>
+            <div class="card-wrap">
+               <div class="inner">
+                   <ul class="card-list red">
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/435/card_img/20935/435card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/2235/card_img/20936/2235card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/730/card_img/22204/730card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/608/card_img/21375/608card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/87/card_img/20239/87card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/714/card_img/22188/714card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/602/card_img/21369/602card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/2263/card_img/20703/2263card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/2300/card_img/25153/2300card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/2354/card_img/24965/2354card.png" alt="카드이미지"></a></li>
+                    </ul>
+                   <ul class="card-list">
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/435/card_img/20935/435card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/2235/card_img/20936/2235card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/730/card_img/22204/730card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/608/card_img/21375/608card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/87/card_img/20239/87card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/714/card_img/22188/714card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/602/card_img/21369/602card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/2263/card_img/20703/2263card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/2300/card_img/25153/2300card.png" alt="카드이미지"></a></li>
+                        <li class="card-item"><a href=""><img src="https://api.card-gorilla.com:8080/storage/card/2354/card_img/24965/2354card.png" alt="카드이미지"></a></li>
+                    </ul>
+               </div>
+            </div>
+           
+        </section>
+        <!-- 회사비전  -->
+        <section class="sc-vision">
+            <h2 class="blind">카드고릴라 비전</h2>
+            <div class="text-box">
+                <h3 class="sc-title" data-fade><span>우리는 카드를 쓰고, </span><span>카드에 대해 씁니다.</span></h3>
+                <p class="sub-title" data-fade><span>카드고릴라는 지금 카드를 쓰고 </span><span>앞으로 카드를 쓸 모두를 위해</span><br><span>공신력 있는 카드 정보와 전문 콘텐츠를 제공합니다.</span><br><span>여러 카드사의 카드를 한눈에 비교하고 싶을 때,</span><br><span>내가 카드를 잘 쓰고 있는지 궁금할 때, </span><br><span>카드를 사용하다가 어려운 점이 생겼을 때,</span><br><span>업계 트렌드를 살펴보고 싶을 때</span><br><span>사람들이 가장 먼저 찾아오는 곳입니다.</span></p>
+            </div>
+            <div class="video-box">
+                <!-- muted 음소거 / 스크롤내리면 영상이 재생됨 -->
+                <video autoplay="autoplay" muted="muted" loop='loop' src="http://www.gorilladistrict.com/src/statics/img/movie_cg.mp4"></video>
+                <div class="btn-control">
+                    <button class="btn play"><span class="blind">재생</span></button>
+                    <button class="btn pause"><span class="blind">정지</span></button>
+                </div>
+            </div>
+            <div class="text-box space">
+                <h3 class="sc-title" data-fade>Why We Should Work Together</h3>
+                <p class="sub-title" data-fade>카드고릴라는 '카드'에 강합니다.</p>
+            </div>
+        </section>
+        <!-- 브랜드광고 -->
+        <section class="sc-brand">
+            <h2 class="blind">브랜드광고</h2>
+            <div class="cont-wrap">
+                <div class="logo-box"><img data-fade src="./asset/images/content/brand02.png" alt="대한항공 로고이미지"></div>
+                <!-- h3 대신 strong 이 더 효율적, 소제목 급이 아님, 써도 상관은 없음 -->
+                <h3 class="title" data-fade><span>대한한공과 함께 </span><span>"올해는, 한국 뜨셔야죠"</span></h3>
+                <p class="desc" data-fade>대한항공 마일리지 카드, <br>다시 시작된 보통의 여행을 위한 첫 준비입니다.</p>
+                <a href="" class="link-more" data-fade>더 보기</a>
+            </div>
+        </section>
+        <!-- 새 소식 -->
+        <section class="sc-news">
+            <h2 class="sc-title" data-fade>지금 딱 필요한 콘텐츠</h2>
+            <ul class="news-list">
+                <li class="news-item" data-fade>
+                    <a href="">
+                        <div class="img-box"><img src="./asset/images/content/news01.jpg" alt="주유 3천원시대...이제 이 카드 없인 주유 못해요!"></div>
+                        <div class="cont-box">
+                            <!-- em이나 h3??> em은 아님! 단어만!! -->
+                            <h3 class="title">주유 3천원시대, 이제 이 카드 없인 주유 못해요!</h3>
+                            <p class="cont">2021년, 가장 인기 있었던 Auto 카드는?</p>
+                            <span class="date">2022.05.25</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="news-item" data-fade>
+                    <a href="">
+                        <div class="img-box"><img src="./asset/images/content/news02.jpg" alt="새롭게 스마트폰 바꿀 때, 통신사 제휴카드가 이득일까?"></div>
+                        <div class="cont-box">
+                            <h3 class="title">새롭게 스마트폰 바꿀 때, 통신사 제휴카드가 이득일까?</h3>
+                            <p class="cont">공시지원금 vs 선택약정할인부터 제휴카드 & 통신할인카드까지 파헤쳐보자.</p>
+                            <span class="date">2022.05.18</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="news-item" data-fade>
+                    <a href="">
+                        <div class="img-box"><img src="./asset/images/content/news03.jpg" alt="부장님부터 MZ세대 신입사원까지 푹 빠진 골프 할인카드 BEST 5!"></div>
+                        <div class="cont-box">
+                            <h3 class="title">부장님부터 MZ세대 신입사원까지 푹 빠진 골프 할인카드 BEST 5!</h3>
+                            <p class="cont">골프에 진심인 당신을 위한 골프 특화 카드</p>
+                            <span class="date">2022.05.24</span>
+                        </div>
+                    </a>
+                </li>
+          
+            </ul>
+            <a href="" class="link-more" data-fade>더 보기</a>
+        </section>
+        <!-- 브랜드 파트너  -->
+        <section class="sc-partner">
+            <h2 class="blind">브랜드 파트너</h2>
+            <div class="title-box">
+                <h3 class="sc-title" data-fade>Brand Partnerships</h3>
+            </div>
+            <div class="partner-wrap">
+                <div class="inner">
+                    <ul class="partner-list">
+                        <li class="partner-item"><img src="./asset/images/content/pt01.png" alt="신한카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt02.png" alt="우리카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt03.png" alt="하나카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt04.png" alt="현대카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt05.png" alt="삼성카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt06.png" alt="토스카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt07.png" alt="BC카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt08.png" alt="씨티카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt09.png" alt="국민은행로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt10.png" alt="기업은행로고 이미지"></li>
+                    </ul>
+                    <ul class="partner-list">
+                        <li class="partner-item"><img src="./asset/images/content/pt01.png" alt="신한카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt02.png" alt="우리카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt03.png" alt="하나카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt04.png" alt="현대카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt05.png" alt="삼성카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt06.png" alt="토스카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt07.png" alt="BC카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt08.png" alt="씨티카드로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt09.png" alt="국민은행로고 이미지"></li>
+                        <li class="partner-item"><img src="./asset/images/content/pt10.png" alt="기업은행로고 이미지"></li>
+
+                    </ul>
+                
+                </div>
+            </div>
+            <a href="" class="link-more" data-fade>더 보기</a>
+        </section>
+
+       
+    </main>
+
+    <footer class="footer-area">
+        <div class="inner">
+            <div class="footer-wrap">
+                <nav class="menu-area">
+                    <ul class="menu-list">
+                        <li class="menu-box">
+                            <h3><a href="">고릴라차트</a></h3>
+                            <ul>
+                                <li class="sub-item first"><a href="">고릴라TOP100</a></li>
+                                <li class="sub-item"><a href="">카드타입별순위</a></li>
+                                <li class="sub-item"><a href="">인기혜택별순위</a></li>
+                                <li class="sub-item"><a href="">카드사별순위</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-box">
+                            <h3><a href="">검색</a></h3>
+                        </li>
+                        <li class="menu-box">
+                            <h3><a href="">컨텐츠</a></h3>
+                        </li>
+                        <li class="menu-box">
+                            <h3><a href="">이벤트</a></h3>
+                            <ul>
+                                <li class="sub-item first"><a href="">캐시백 이벤트</a></li>
+                                <li class="sub-item"><a href="">프리미엄 이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-box">
+                            <h3><a href="">브랜드</a></h3>
+                            <ul>
+                                <li class="sub-item first"><a href="">이달의 브랜드</a></li>
+                                <li class="sub-item"><a href="">패밀리 서비스</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-box">
+                            <ul>
+                                <li><a href="">오시는길</a></li>
+                                <li><a href="">공지사항</a></li>
+                                <li><a href="">개인정보처리방침</a></li>
+                                <li><a href="">제휴문의</a></li>
+                                <li><a href="">소비자중심경영</a></li>
+                            </ul>
+                        </li>
+                         
+                   
+                    </ul>
+                </nav>
+                <div class="info-area">
+                    <div class="addr-box">
+                        <h2>카드고릴라</h2>
+                        <address class="addr">
+                            <span>사업자등록번호 : 872-87-01176</span>
+                            <span>대표이사 : 고승훈</span>
+                            <span>서울특별시 성동구 서울숲4길 12-7 2층 ㈜고릴라디스트릭트</span>
+                        </address>
+                    </div>
+                    <div class="related-site-area">
+                        <!-- 버튼 영역확장을 위해 버튼태그 안에 텍스트 위치 & after로 버튼 아이콘가져오기 -->
+                        <button class="btn-down">
+                            <span>관련 사이트</span>
+                        </button>
+                        <ul class="related-list">
+                            <li class="related-item"><a href="https://www.prestigegorilla.net/home" target="_blank">프레스티지고릴라</a></li>
+                            <li class="related-item"><a href="https://www.gosty.co.kr/" target="_blank">고스티</a></li>
+                        </ul>
+                    </div>
+    
+                 
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="./asset/js/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <!-- //위치 -->
+    <script src="./asset/js/common.js"></script>
+    <script src="./asset/js/main.js"></script>
+
+
+
+
+
+</body>
+
+</html>
